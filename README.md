@@ -20,11 +20,11 @@ To install the bindings via [Composer](http://getcomposer.org/), add the followi
   "repositories": [
     {
       "type": "git",
-      "url": "https://github.com/OASC-France/fiwoo-device-management-test-sdk-php.git"
+      "url": "https://github.com/oasc-france/fiwoo-device-management-test-sdk-php.git"
     }
   ],
   "require": {
-    "OASC-France/fiwoo-device-management-test-sdk-php": "*@dev"
+    "oasc-france/fiwoo-device-management-test-sdk-php": "*@dev"
   }
 }
 ```

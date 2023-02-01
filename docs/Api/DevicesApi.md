@@ -17,7 +17,7 @@ Method | HTTP request | Description
 [**updateDevice**](DevicesApi.md#updatedevice) | **PUT** /v1/device/{id} | 
 
 # **createDevice**
-> \Swagger\Client\Model\InlineResponse201 createDevice($body)
+> \Swagger\Client\Model\InlineResponse201 createDevice($body, $x_auth_token)
 
 
 
@@ -44,9 +44,10 @@ $apiInstance = new Swagger\Client\Api\DevicesApi(
     $config
 );
 $body = new \Swagger\Client\Model\CreateDeviceAPI(); // \Swagger\Client\Model\CreateDeviceAPI | 
+$x_auth_token = "x_auth_token_example"; // string | 
 
 try {
-    $result = $apiInstance->createDevice($body);
+    $result = $apiInstance->createDevice($body, $x_auth_token);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling DevicesApi->createDevice: ', $e->getMessage(), PHP_EOL;
@@ -59,6 +60,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **body** | [**\Swagger\Client\Model\CreateDeviceAPI**](../Model/CreateDeviceAPI.md)|  |
+ **x_auth_token** | **string**|  |
 
 ### Return type
 
@@ -319,7 +321,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **readDevice**
-> \Swagger\Client\Model\InlineResponse201 readDevice($id)
+> object readDevice($id, $x_auth_token)
 
 
 
@@ -346,9 +348,10 @@ $apiInstance = new Swagger\Client\Api\DevicesApi(
     $config
 );
 $id = "id_example"; // string | 
+$x_auth_token = "x_auth_token_example"; // string | 
 
 try {
-    $result = $apiInstance->readDevice($id);
+    $result = $apiInstance->readDevice($id, $x_auth_token);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling DevicesApi->readDevice: ', $e->getMessage(), PHP_EOL;
@@ -361,10 +364,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **string**|  |
+ **x_auth_token** | **string**|  |
 
 ### Return type
 
-[**\Swagger\Client\Model\InlineResponse201**](../Model/InlineResponse201.md)
+**object**
 
 ### Authorization
 
@@ -613,7 +617,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateDevice**
-> \Swagger\Client\Model\InlineResponse201 updateDevice($body, $id)
+> \Swagger\Client\Model\InlineResponse201 updateDevice($body, $x_auth_token, $id)
 
 
 
@@ -640,10 +644,11 @@ $apiInstance = new Swagger\Client\Api\DevicesApi(
     $config
 );
 $body = new \Swagger\Client\Model\UpdateDeviceAPI(); // \Swagger\Client\Model\UpdateDeviceAPI | 
+$x_auth_token = "x_auth_token_example"; // string | 
 $id = "id_example"; // string | 
 
 try {
-    $result = $apiInstance->updateDevice($body, $id);
+    $result = $apiInstance->updateDevice($body, $x_auth_token, $id);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling DevicesApi->updateDevice: ', $e->getMessage(), PHP_EOL;
@@ -656,6 +661,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **body** | [**\Swagger\Client\Model\UpdateDeviceAPI**](../Model/UpdateDeviceAPI.md)|  |
+ **x_auth_token** | **string**|  |
  **id** | **string**|  |
 
 ### Return type

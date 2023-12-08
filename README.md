@@ -350,7 +350,7 @@ try {
 
 ## Documentation for API Endpoints
 
-All URIs are relative to *https://drural-api-manager.oasc.fr:8243/fiwoo-device-management/1.0.0*
+All URIs are relative to *https://gateway.am.wso2.core.drural-sandbox.eu/devicemanagement/6.2.1*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
